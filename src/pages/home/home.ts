@@ -12,7 +12,9 @@ export class HomePage {
 
   }
 
-  goToMyPage() {
-    this.navCtrl.push('your-page');
+  goToMyPage(detailInfo) {
+    this.navCtrl.push('your-page', {
+      'id': detailInfo.id
+    });
   }
 }
